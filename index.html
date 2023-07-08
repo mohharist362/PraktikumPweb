@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freepik</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+    />
+
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar">
+        <img src="freepik-removebg-preview.png" class="logo">
+        <div class="navbar-nav">
+            <a href="#">Vektor</a>
+            <a href="#">Foto</a>
+            <a href="#">Gambar AI
+                <span class="new" style>NEW</span>
+            </a>
+            <a href="#">Video</a>
+            <a href="#">PSD</a>
+            <a href="#">3D</a>
+            <a href="#">Font</a>
+            <a>Kategori</a>
+            <a href="#">Koleksi</a>
+            <a href="#">Lainnya</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" class="sell">Jual Konten</a>
+            <a href="#" class="pricing">Harga</a>
+            <a href="#" class="log">Log in</a>
+            <a href="#" class="log">Log out</a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Section start-->
+    <section class="hero hero-video">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Semua aset yang anda butuhkan, di satu tempat</h1>
+                <h2 class="hero-title-2">Temukan dan unduh foto, vektor, video, dan mockup berkualitas tinggi terbaik</h2>
+                <form class="hero-form" id="search-fake" action="/search" method="get">
+                    <div class="form-group">
+                        <div class="form-dropdown">
+                            <div class="form-dropdown-button" title="Assets">
+                                <i class="icon--resources" data-feather="package"></i>
+                                <span>Assets</span>
+                            </div>
+                        </div>
+                        <input id="search-value-fake" type="text" class="size--lg js-bound" name="query" placeholder="Search all assets" value autocomplete="off" min="2" autofocus required>
+                        <div id class="autocomplete"></div>
+                        <button class="button-search" type="submit">
+                            <i class="icon-search" data-feather="search"></i>
+                        </button>
+                    </div>
+                    <div class="search-info-by-image" data-modal="search-by-image">
+                        <i class="icon-info-by-image" data-feather="image"></i>
+                        <span>Search by image</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tags">
+            <div class="tags-content">
+                <ul class="tags-list">
+                    <li>
+                        <a class="tags-button" href="#" data-track-arguments="event,portada,click_palabra_buscador">
+                            <i class="tags-icon" data-feather="search"></i>
+                            <span>Eid</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tags-button" href="#" data-track-arguments="event,portada,click_palabra_buscador">
+                            <i class="tags-icon" data-feather="search"></i>
+                            <span>Blue background</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tags-button" href="#" data-track-arguments="event,portada,click_palabra_buscador">
+                            <i class="tags-icon" data-feather="search"></i>
+                            <span>Vektor</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bubble">
+            <div class="bubble-content">
+                <ul class="bubble-list">
+                    <li>
+                        <a class="bubble-list-item" href="#">
+                            <div class="bubble-list-degree">
+                                <div class="bubble-list-border">
+                                    <img class="bubble-list-image" data-type="image" draggable="false" src="https://img.freepik.com/free-photo/_23-2149543516.jpg?size=240&ext=jpg" title="Vectors" loading="lazy">
+                                </div>
+                            </div>
+                            <h3 class="bubble-list-title">
+                                <span>Vektor</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bubble-list-item" href="#">
+                            <div class="bubble-list-degree">
+                                <div class="bubble-list-border">
+                                    <img class="bubble-list-image" data-type="image" draggable="false" src="https://img.freepik.com/free-photo/_23-2148037174.jpg?size=240&ext=jpg" title="Photos" loading="lazy">
+                                </div>
+                            </div>
+                            <h3 class="bubble-list-title">
+                                <span>Foto</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bubble-list-item" href="#">
+                            <div class="bubble-list-degree">
+                                <div class="bubble-list-border">
+                                    <video class="bubble-list-video" data-type="video" data-src="https://v4.cdnpk.net/videvo_files/video/free/video0460/large_watermarked/_import_60d16f6d389100.68816569_preview.mp4"
+                                    muted controlslist="nodownload" poster="https://joy1.videvo.net/videvo_files/video/free/video0460/thumbnails/_import_60d16f6d389100.68816569_large.jpg"
+                                    lazy loading="lazy" preload="none">
+                                        <source type="video/mp4" src="https://v4.cdnpk.net/videvo_files/video/free/video0460/large_watermarked/_import_60d16f6d389100.68816569_preview.mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <h3 class="bubble-list-title">
+                                <span>Video</span>
+                                <span class="bubble-list-video-badge">New</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bubble-list-item" href="#">
+                            <div class="bubble-list-degree">
+                                <div class="bubble-list-border">
+                                    <img class="bubble-list-image" data-type="image" draggable="false" src="https://img.freepik.com/free-photo/_77847-292.jpg?size=240&ext=jpg" title="PSD" loading="lazy">
+                                </div>
+                            </div>
+                            <h3 class="bubble-list-title">
+                                <span>PSD</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bubble-list-item-2" href="#">
+                            <div class="bubble-list-degree">
+                                <div class="bubble-list-border">
+                                    <img class="bubble-list-image" data-type="image" draggable="false" src="https://img.freepik.com/free-photo/_23-2148897678.jpg?size=240&ext=jpg" title="Templates" loading="lazy">
+                                </div>
+                            </div>
+                            <h3 class="bubble-list-title">
+                                <span>Template</span>
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section end-->
+
+    <!-- Premium Section start -->
+    <section class="premium">
+        <p><strong>Unduhan tanpa batas</strong> untuk ide Anda yang tak terbatas</p>
+        <a href="#" class="cta">Mulai Berlangganan</a>
+    </section>
+    <!-- Premium Section end-->
+
+    <!-- Recommended Section start -->
+    <section class="recom">
+        <div>
+            <h2><span>Kategori yang direkomendasikan</span> untuk tetap terinspirasi</h2>
+            <p>Jadilah yang terdepan dalam kreativitas dengan kategori khusus yang disesuaikan dengan selera anda.</p>
+            <ul>
+                <li><a href="#"></a>
+                    <div>
+                        <a href="" id="video"><i data-feather="video"></i></a>
+                        <video class="video-recom" data-type="video" controlslist="nodownload" poster="https://joy1.videvo.net/videvo_files/video/free/video0481/thumbnails/_import_629c5212985e76.46688986_large.jpg"
+                        muted loop>
+                            <source type="video/mp4" src="https://v4.cdnpk.net/videvo_files/video/free/video0481/large_watermarked/_import_629c5212985e76.46688986_preview.mp4"
+                            data-src="https://v4.cdnpk.net/videvo_files/video/free/video0481/large_watermarked/_import_629c5212985e76.46688986_preview.mp4">
+                        </video>
+                        <p>Video sekolah</p>
+                    </div>
+                </li>
+                <li><a href="#"></a>
+                    <div>
+                        <img src="https://img.freepik.com/premium-photo/woman-giving-watermelon-his-dog_23-2148728048.jpg" 
+                        title="Watermelon" loading="lazy">
+                        <p>Semangka</p>
+                    </div>
+                </li>
+                <li><a href="#"></a>
+                    <div>
+                        <img src="https://img.freepik.com/premium-vector/graduating-students-pupil-hands-gown-throwing-graduation-caps-air-vector-illustration_47715-175.jpg?size=626&ext=jpg" title="Graduation backgrounds" loading="lazy">
+                        <p>Background kelulusan</p>
+                    </div>
+                </li>
+                <li><a href="#"></a>
+                    <div>
+                        <img src="https://img.freepik.com/premium-vector/summer-time-holiday-vacation-swimming-pool_122058-85.jpg?size=626&ext=jpg" title="Pool party invitations" loading="lazy">
+                        <p>Undangan pesta kolam renang</p>
+                    </div>
+                </li>
+                <li><a href="#"></a>
+                    <div>
+                        <a href="" id="video"><i data-feather="video"></i></a>
+                        <video class="video-recom" data-type="video" controlslist="nodownload" poster="https://joy1.videvo.net/videvo_files/video/free/video0480/thumbnails/_import_628b55859ec151.61264002_large.jpg"
+                        muted loop>
+                            <source type="video/mp4" src="https://v4.cdnpk.net/videvo_files/video/free/video0480/large_watermarked/_import_628b55859ec151.61264002_preview.mp4"
+                            data-src="https://v4.cdnpk.net/videvo_files/video/free/video0480/large_watermarked/_import_628b55859ec151.61264002_preview.mp4">
+                        </video>
+                        <p>Fitness video</p>
+                    </div>
+                </li>
+                <li><a href="#"></a>
+                    <div>
+                        <img src="https://img.freepik.com/premium-photo/big-fire-burns-against-background-night-sky-close-up_185094-7188.jpg?size=626&ext=jpg" title="Bonfire" loading="lazy">
+                        <p>Api unggun</p>
+                    </div>
+                </li>
+                <li><a href="#"></a>
+                    <div>
+                        <img src="https://img.freepik.com/free-photo/young-adult-enjoying-yoga-nature_23-2149573166.jpg?size=626&ext=jpg" title="Yoga" loading="lazy">
+                        <p>Yoga</p>
+                    </div>
+                </li>
+                <li><a href="#"></a>
+                    <div>
+                        <a href="" id="video"><i data-feather="video"></i></a>
+                        <video class="video-recom" data-type="video" controlslist="nodownload" poster="https://joy1.videvo.net/videvo_files/video/free/video0464/thumbnails/_import_61260c822abc39.09468489_large.jpg" muted loop>
+                            <source type="video/mp4" src="https://v4.cdnpk.net/videvo_files/video/free/video0464/large_watermarked/_import_61260c822abc39.09468489_preview.mp4"
+                            data-src="https://v4.cdnpk.net/videvo_files/video/free/video0464/large_watermarked/_import_61260c822abc39.09468489_preview.mp4">
+                        </video>
+                        <p>Video air</p>
+                    </div>
+                </li>
+                <li><a class="img-dsv" href="#"></a>
+                    <div>
+                        <img src="https://img.freepik.com/premium-vector/information-photo-curriculum-vitae-template_23-2148556683.jpg?size=626&ext=jpg" title="CV templates" loading="lazy">
+                        <p>Template CV</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Recommended Section end -->
+
+    <!-- Collections Section start -->
+    <section class="koleksi">
+        <div class="koleksi-content">
+            <div class="koleksi-flex-title">
+                <div>
+                    <h2 class="koleksi-title">Koleksi tren untuk meningkatkan ide anda</h2>
+                    <p class="koleksi-subtitle">Jelajahi koleksi paling trendi Freepik dan temukan visual yang sempurna.</p>
+                </div>
+                <a class="button-arrow-right" href="#"><span>Jelajahi koleksi</span>
+                    <i class="arrow" data-feather="arrow-right"></i>
+                </a>
+            </div>
+            <ul class="koleksi-carousel">
+                <article class="koleksi-item" data-author-id="23" data-current-user-collection="false" data-elements="100" data-followers="4349" data-free="1" data-id="4419616" data-premium="0"
+                data-share-text="Streetwear Designs, 100 Best Free Graphics on Freepik" data-share-url="https://www.freepik.com/collection/streetwear-designs/4419616"
+                data-type="public" data-order="0">
+                    <div class="box">
+                        <div class="menu-bawah">
+                            <div class="actions">
+                                <button class="more">
+                                    <i id="more" data-feather="more-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a class="collection__link" href="#">
+                            <div class="image-wrapper">
+                                <div class="image">
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-vector/streetwear-design-template-collection-vector-files_663497-373.jpg?size=626&ext=jpg" 
+                                        alt="Streetwear design template collection vector files" width="626" height="417" loading="lazy">
+                                    </figure>
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-vector/modern-poster-with-text-world-techno-style-stylish-print-streetwear-print-hoodie_657953-46.jpg?size=626&ext=jpg" 
+                                        alt="Modern poster with text World In Techno style stylish print for streetwear print for hoodie" width="626" height="230" loading="lazy">
+                                    </figure>
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-vector/urban-rainbow-tshirt-design-street-wear-style-text-effect-editable_557798-524.jpg?size=626&ext=jpg" 
+                                        alt="Urban Rainbow Tshirt design Street Wear style text effect editable" width="626" height="626" loading="lazy">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="collection__description">
+                                <div class="collection__content">
+                                    <div class="row">
+                                        <h2 class="article-font">
+                                            <div class="mg-none-i">
+                                                <span class="font-regular">Desain Streetwear</span>
+                                                <span class="text-hide"></span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="text__scale-gray--7">
+                                        <span class="count">100 resources</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <article class="koleksi-item" data-author-id="23" data-current-user-collection="false" data-elements="120" data-followers="211" data-free="1" data-id="5143939" data-premium="0"
+                data-share-text="Imaginary Horizons, 120 Best Free Graphics on Freepik" data-share-url="https://www.freepik.com/collection/imaginary-horizons/5143939"
+                data-type="public" data-order="1">
+                    <div class="box overlay">
+                        <div class="menu-bawah">
+                            <div class="actions">
+                                <button class="more">
+                                    <i id="more" data-feather="more-vertical"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a class="collection__link" href="#">
+                            <div class="image-wrapper">
+                                <div class="image">
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-photo/man-stands-dark-place-with-red-orange-sky-words-word-bottom_81048-12514.jpg?size=626&ext=jpg" 
+                                        alt="A man stands in a dark place with a red and orange sky and the words the word on the bottom." width="626" height="417" loading="lazy">
+                                    </figure>
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-photo/beautiful-autumn-forest-scenery-bright-sun-female-knight-bright-background-nature_31965-148849.jpg?size=626&ext=jpg" 
+                                        alt="Beautiful autumn forest scenery bright sun female knight bright background nature" width="626" height="313" loading="lazy">
+                                    </figure>
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-photo/sunset-mountain-lake-with-mountains-background_717440-9496.jpg?size=626&ext=jpg" 
+                                        alt="A sunset over a mountain lake with mountains in the background" width="626" height="417" loading="lazy">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="collection__description">
+                                <div class="collection__content">
+                                    <div class="row">
+                                        <h2 class="article-font">
+                                            <div class="mg-none-i">
+                                                <span class="font-regular">Imaginary Horizons</span>
+                                                <span class="text-hide"></span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="text__scale-gray--7">
+                                        <span class="count">120 resources</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <article class="koleksi-item" data-author-id="23" data-current-user-collection="false" data-elements="203" data-followers="84" data-free="1" data-id="5177802" data-premium="0"
+                data-share-text="Too Gay, Too Good, 203 Best Free Graphics on Freepik" data-share-url="https://www.freepik.com/collection/too-gay-too-good/5177802"
+                data-type="public" data-order="2">
+                    <div class="box">
+                        <div class="menu-bawah">
+                            <div class="actions">
+                                <button class="more">
+                                    <i id="more" data-feather="more-vertical"></i>
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="collection__link" href="#">
+                            <div class="image-wrapper">
+                                <div class="image">
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-psd/poster-mockup-grunge-environment_23-2150203636.jpg?size=626&ext=jpg" 
+                                        alt="Poster mockup in a grunge environment" width="626" height="417" loading="lazy">
+                                    </figure>
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-psd/colour-pop-psd-photo-effect_564061-325.jpg?size=626&ext=jpg" 
+                                        alt="Colour Pop PSD Photo Effect" width="626" height="435" loading="lazy">
+                                    </figure>
+                                    <figure>
+                                        <img src="https://img.freepik.com/premium-psd/metal-foil-wrinkled-with-poster-mock-up_23-2150014423.jpg?size=626&ext=jpg" 
+                                        alt="Metal foil wrinkled with poster mock-up" width="626" height="417" loading="lazy">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="collection__description">
+                                <div class="collection__content">
+                                    <div class="row">
+                                        <h2 class="article-font">
+                                            <div class="mg-none-i">
+                                                <span class="font-regular">Too Gay, Too Good</span>
+                                                <span class="text-hide"></span>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="text__scale-gray--7">
+                                        <span class="count">203 resources</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </ul>
+        </div>
+    </section>
+    <!-- Collections Section end -->
+
+    <!-- Features Section start -->
+    <section class="features">
+        <div class="container">
+            <h2 class="title">Siap untuk<span class="span"> Naik tingkat?</span></h2>
+            <p class="subtitle">Premium adalah opsi masuk jika anda ingin membawa proyek kreatif anda ke level selanjutnya.</p>
+            <div class="conten">
+                <picture class="gambar">
+                    <source srcset="https://freepik.cdnpk.net/img/home/registered.webp, https://freepik.cdnpk.net/img/home/registered-2x.webp 2x" type="image/webp">
+                    <source srcset="https://freepik.cdnpk.net/img/home/registered.png, https://freepik.cdnpk.net/img/home/registered-2x.png 2x" type="image/png">
+                    <img class="gambar-2" src="https://freepik.cdnpk.net/img/home/registered.png" width="436" height="430" title="Freepik" loading="lazy">
+                </picture>
+                <ul class="baris">
+                    <li class="col__sm--12">
+                        <i id="download" data-feather="gift"></i> 
+                        <h3>Peningkatan produktivitas</h3>
+                        <p class="subtitle-2">Premium menyertakan akses penuh ke perpustakaan Freepik dan Flaticon, sehingga anda dapat menemukan apa pun yang anda perlukan dengan cepat.</p>
+                    </li>
+                    <li class="col__sm--12">
+                        <i id="download" data-feather="download"></i>
+                        <h3>Lebih banyak unduhan</h3>
+                        <p class="subtitle-2">Unduh semua gambar yang Anda perlukan untuk proyek Anda tanpa gangguan. Hingga seratus unduhan per hari.</p>
+                    </li>
+                    <li class="col__sm--12">
+                        <i id="download" data-feather="star"></i>
+                        <h3>Manfaat tambahan</h3>
+                        <p class="subtitle-2">Tingkatkan pengalaman menjelajah Anda dengan Premium: antarmuka bebas iklan, aset berlisensi penuh, dukungan prioritas, dan lainnya.</p>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="cta">Mulai Berlangganan</a>
+        </div>
+    </section>
+    <!-- Features Section end -->
+
+    <!-- Calendar Section start -->
+    <div class="section--content-autopromo">
+        <section class="calendar">
+            <div class="light-ellipse"></div>
+            <div class="calendar__container">
+                
+            </div>
+            <picture class="calendar__img">
+                <source srcset="https://freepik.cdnpk.net/img/home/calendar.webp" type="image/webp">
+                <img src="https://freepik.cdnpk.net/img/home/calendar.png" title="calendar" loading="lazy">
+            </picture>
+            <div class="light-ellipse--right"></div>
+        </section>
+    </div>
+    <!-- Calendar Section end -->
+
+    <!-- Join Section start -->
+    <section class="join">
+        <div class="join-container">
+            <div class="join-content">
+                <p class="join-title">Bergabunglah dengan Freepik<span> creator community</span></p>
+                <p class="join-subtitle">Di balik setiap gambar stok, ada pikiran kreatif. Anda juga dapat membuat konten dan menjualnya di Freepik</p>
+                <a class="join-button" href="#" target="_blank" rel="noopener noreferrer">Jual konten</a>
+            </div>
+            <picture class="join-picture">
+                <source srcset="https://freepik.cdnpk.net/img/home/community.webp" type="image/webp">
+                <source srcset="https://freepik.cdnpk.net/img/home/community.png" type="image/png">
+                <img src="https://freepik.cdnpk.net/img/home/community.png" title="Join Freepik" loading="lazy">
+            </picture>
+        </div>
+    </section>
+    <!-- Join Section end -->
+
+    <!-- Feather icons -->
+    <script>
+    feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script src="imagehero.js"></script>
+    <script src="imagehero.json"></script>
+</body>
+</html>
